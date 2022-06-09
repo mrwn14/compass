@@ -1,0 +1,109 @@
+.main-background-custom {
+    background-image: url(../images/main\ page\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    
+}
+
+.leading-page {
+    position: absolute;
+    top: 50%;
+    width: 95%;
+}
+
+.logo-custom {
+    width: 50vh;
+    height: auto;
+}
+
+.small-screen-nav-button {
+    background-color: black;
+    color: azure;
+    z-index: 5;
+}
+
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+
+.leading-button {
+    border-radius: 5rem;
+    border-color: #E0E5EF;
+    width: 7rem;
+    height: 3rem;
+    background-color: #E0E5EF;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.7);
+}
+
+#PLANS {
+    background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
+}
+
+.top-part {
+    height:50vh;
+    background-color: #272F32;
+}
+
+.mid-part {
+    height:1vh;
+    background-color: #272F32;
+}
+
+.bottom-part {
+    height: 70vh;
+}
+
+.scrolled {
+    background-color: black;
+    animation-delay: 3s;
+}
+
+.card1 {
+    height: 21rem;
+    width: 21rem;
+    background-color: white;
+    transform: translateY(-6rem);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+
+}
+.card2 {
+    height: 21rem;
+    width: 21rem;
+    background-color: white;
+    transform: translateY(-6rem);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+}
+.card3 {
+    height: 21rem;
+    width: 21rem;
+    background-color: white;
+    transform: translateY(-6rem);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+}
+
+#EXPERTS {
+    height: 150vh;
+    background-color: white;
+}
+
+.border {
+    height: 76vh;
+    width: 80%;
+    background-color: #806BD4;
+}
+
+.img1 {
+    height: 75.6vh;
+    width: 40%;
+}
+.img2 {
+    height: 75.6vh;
+}
+.img1 {
+    height: 75.6vh;
+}
