@@ -153,7 +153,7 @@ const submit = form[0].querySelector('input[type="submit"]');
 
 function showData(e) {
     var formData = new FormData(form[0]);
-    if (formData.get("date") != "" && formData.get("fname") != "" && formData.get("lname") != "" && formData.get("email") != "" && formData.get("number") != "") {
+    if (formData.get("date") != "" && formData.get("time") != "" && formData.get("fname") != "" && formData.get("lname") != "" && formData.get("email") != "" && formData.get("number") != "") {
         e.preventDefault();
         let confirm = document.getElementById("confirmation-side");
         confirm.classList.add("activated");
@@ -171,7 +171,8 @@ function showData(e) {
         document.getElementById("first-name").innerHTML = formData.get("fname") + " " + formData.get("lname");
         document.getElementById("email-address").innerHTML = formData.get("email");
         document.getElementById("phone-number").innerHTML = formData.get("number");
-        document.getElementById("date-booking").innerHTML = formData.get("date");
+        document.getElementById("date-booking").innerHTML = formData.get("date");        
+        document.getElementById("time-booking").innerHTML = formData.get("time");        
         document.getElementById("plan-booked").innerHTML = $('input[name="options"]:checked').val();
         document.getElementById("expert-booked").innerHTML = $('input[name="optionsss"]:checked').val();
     }
