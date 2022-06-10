@@ -103,7 +103,7 @@
                     <div class="plan-text d-flex flex-column">
                         <h4 class="text-center">Planetary Travel</h4>
                         <h6>Ever wanted to take a look at Venus? Mars? or even Uranus? With the planetary plan, you can visit any of these planets in our 5-star location.</h6>
-                        <button class="bab px-4 py-2 ms-4 mt-3">MORE</button>
+                        <button class="bab px-4 py-2 ms-4 mt-3" data-bs-toggle="popover" data-bs-placement="top" title="Voyage Plan" data-bs-content="You will be warping at high speeds from planet to planet, where we'll spend a couple of weeks in each one inside our top-notch facilities.">MORE</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card2 m-auto">
@@ -114,7 +114,7 @@
                     <div class="plan-text d-flex flex-column">
                         <h4 class="text-center">Interstellar Travel</h4>
                         <h6>Our solar system is not the only place you can visit in this day and age, choose this plan for a tour in some of our neighbouring systems.</h6>
-                        <button class="bab px-4 py-2 ms-4 mt-3">MORE</button>
+                        <button class="bab px-4 py-2 ms-4 mt-3" data-bs-toggle="popover" data-bs-placement="top" title="Voyage Plan" data-bs-content="We will visit 3 other solar systems of your choice, where we will spend a couple of days if its uninhabited, or weeks if we already set base on one of the planets.">MORE</button>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 card3 m-auto">
@@ -125,7 +125,7 @@
                     <div class="plan-text d-flex flex-column">
                         <h4 class="text-center">Galactic Travel</h4>
                         <h6>For the opportunity to go even further beyond, visit the galaxy of your choice, with a tour of it's planets and systems. This is the epitome of space travel.</h6>
-                        <button class="bab px-4 py-2 ms-4 mt-3">MORE</button>
+                        <button class="bab px-4 py-2 ms-4 mt-3" data-bs-toggle="popover" data-bs-placement="top" title="Voyage Plan" data-bs-content="We'll be moving at light speed to get to another galaxy, so hold on tight. The journey will be long and tiring (6 months to be exact), but oh boy is it worth it.">MORE</button>
                     </div>
                 </div>
             </div>
@@ -571,6 +571,10 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/jquery.typeText.js"></script>
     <script src="./scripts/expert.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 
 
     </body>
