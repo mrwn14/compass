@@ -80,16 +80,16 @@
 
 $('#target').teletype({
   text: [
-    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
-    'sed diam nonumy eirmod tempor invidunt ut labore et dolore',
-    'magna aliquyam erat, sed diam voluptua. At vero eos et',
-    'accusam et justo duo dolores et ea rebum. Stet clita kasd',
-    'gubergren, no sea takimata sanctus est Lorem ipsum dolor sit',
-    'amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,',
-    'sed diam nonumy eirmod tempor invidunt ut labore et dolore',
-    'magna aliquyam erat, sed diam voluptua. At vero eos et accusam',
-    'et justo duo dolores et ea rebum. Stet clita kasd gubergren,',
-    'no sea takimata sanctus est Lorem ipsum dolor sit amet.'
+    'Travel through the stars, discover other worlds.',
+    'One small step for man, one giant leap for mankind.',
+    'In this single galaxy of ours there are eighty-seven thousand million suns.',
+    'I see Earth! It is so beautiful.',
+    'Curiosity is the essence of our existence.',
+    'We are limited only by our imagination and our will to act.',
+    'Say hello to my mother and father...the Earth and Space.',
+    'In the field of technology, simplification is always an enormous advance...',
+    'Astronauts are inherently insane. And really noble.',
+    'Scientific people . . . know very well that Time is only a kind of Space.'
   ]
 });
 

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link href="../css files/style.css" rel="stylesheet">
+    <link rel="icon" href="../images/compass.png">
+    <title>COMPASS - BOOKING</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+</head>
+<body class="position-relative">
+    <nav class="navbar nav-book navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a href="#" class="navbar-brand">
+            <img class=" d-none d-sm-block logo-custom" src="images/logo.png" alt="logo">
+            <img class="d-xs-block d-sm-none" style="width: 20vh;" src="images/logo.png" alt="logo">
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#NavLinks"
+            aria-controls="NavLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="NavLinks">
+            <ul class="navbar-nav ms-auto text-center d-lg-flex flex-lg-row justify-content-around" style="width:75%">
+                <li class="nav-item active">
+                    <a href="index.html#HOME" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#PLANS" class="nav-link">PLANS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#EXPERTS" class="nav-link">EXPERTS</a>
+                </li>
+                <li class="nav-item">
+                <a href="index.html#ABOUT" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#CONTACT" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container position-relative">
+        <div class="position-absolute top-0 start-50 translate-middle-x pt-3">
+            <h1 class="text-center pb-2">Appointment Booking</h1>
+            <div class="both d-flex">
+                <div class="tracking-book border d-flex flex-column justify-content-around position-relative">
+                    <div id="category-side" class="category text-center activated m-auto">
+                        Category
+                    </div>
+                    <div id="date-side" class="date text-center m-auto">
+                        Date & Details
+                    </div>
+                    <div id="confirmation-side" class="confirmation text-center m-auto">
+                        Confirmation
+                    </div>
+                    <img src="./images/Image1.png" class="img-side" alt="astronaut">
+                </div>
+                <div class="main-book border">
+    
+                    <!-- first part -->
+                    <!-- <div id="main-book">
+                        <div class="plan ms-5 mt-2">
+                            <h1>Select Plan</h1>
+                        </div>
+                        <div class="plans row">
+                            <div class="plan1 col-4 text-center">
+                                <input type="radio" value ="Planetary Travel" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                                <label class="btn btn-outline-success" for="option1">Planetary Travel</label>
+                            </div>
+                            <div class="plan2 col-4 text-center">
+                                <input type="radio" value ="Interstellar Travel" class="btn-check" name="options" id="option2" autocomplete="off">
+                                <label class="btn btn-outline-success" for="option2">Interstellar Travel</label>
+                            </div>
+                            <div class="plan3 col-4 text-center">
+                                <input type="radio" value ="Galactic Travel" class="btn-check" name="options" id="option3" autocomplete="off">
+                                <label class="btn btn-outline-success" for="option3">Galactic Travel</label>
+                            </div>
+                        </div>
+                        <div class="plan ms-5 mt-5">
+                            <h1>Select Expert</h1>
+                        </div>
+                        <div class="expert d-flex justify-content-around" style="transform: translateY(-7vh);" >
+                            <div id="ex1" class="expertt1 text-center m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn1" autocomplete="off" value="Diane Fischer">
+                                <label id="expertt1" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn1">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Diane Fischer</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 100$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex2" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn2" autocomplete="off" value="Keanu Ewing">
+                                <label id="expertt2" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn2">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Keanu Ewing</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 200$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex3" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn3" autocomplete="off" value="Alishba Horn">
+                                <label id="expertt3" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn3">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Alishba Horn</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 300$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex4" class="expertt1 text-center m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn4" autocomplete="off" value="Isis Padilla">
+                                <label id="expertt4" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn4">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Isis Padilla</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 100$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex5" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn5" autocomplete="off" value="Tayler Nicholson">
+                                <label id="expertt5" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn5">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Tayler Nicholson</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 200$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex6" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn6" autocomplete="off" value="Samera Barnes">
+                                <label id="expertt6" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn6">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Samera Barnes</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 300$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex7" class="expertt1 text-center m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn7" autocomplete="off" value="Rikesh Stott">
+                                <label id="expertt7" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn7">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Rikesh Stott</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 100$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex8" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn8" autocomplete="off" value="Otto Mcdowell">
+                                <label id="expertt8" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn8">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Otto Mcdowell</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 200$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="ex9" class="expertt1 text-center d-none m-auto">
+                                <input type="radio" class="btn-check" name="optionsss" id="optionn9" autocomplete="off" value="Mckenzie Blankenship">
+                                <label id="expertt9" class="ex1 btn btn-outline-success d-flex justify-content-center align-items-center m-auto" for="optionn9">
+                                    <img class="user-img" src="./images/round-account-button-with-user-inside 1.png" alt="user">
+                                    <div class="div align-items-center justify-content-center">
+                                        <h6 class="align-items-center">Mckenzie Blankenship</h6>
+                                        <div class="texter d-flex m-auto justify-content-center align-items-center ms-2">
+                                            <p class="me-2 frr">Duration</p>
+                                            <p class="me-2 scnd"> : 1 hour </p>
+                                            <p class="frr">Price</p>
+                                            <p class="frth"> : 300$</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div> -->
+                
+    
+                    <!-- second part -->
+                    <!-- <div id="secondary-book" class="left-part col-12 w-50 m-auto d-none">
+                        <div class="plan ms-5">
+                            <h1>Select Date</h1>
+                        </div>
+                        <div class="date-picker">
+                            <form id ="form" class="d-flex flex-column form">
+                                <label for="Appointment Date">Appointment Date:</label>
+                                <input type="date" id="date" name="date" required>
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname" required>
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname" required>
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required>
+                                <label for="number">Phone Number:</label>
+                                <input type="number" id="number" name="number" required>
+                                <input type="submit">
+                              </form>
+                        </div>
+                    </div>  --> 
+    
+                    <!-- third part -->
+                    <div id="third-book" class="">
+                        <div class="thanks">
+                            <h3 class="text-center">SUMMARY</h3>
+                        </div>
+                        <div class="info d-flex pt-5 mt-5 ps-5">
+                            <div class="riri d-flex flex-column">
+                                <div class="first-name d-flex">
+                                    <h6 class="px-3 fw-light">First Name: </h6>
+                                    <h6 id="first-name" class="fw-bold"></h6>
+                                </div>
+                                <div class="email-address d-flex">
+                                    <h6 class="px-3 fw-light">Email Address: </h6>
+                                    <h6 id="email-address" class="fw-bold"></h6>
+                                </div>
+                                <div class="*phone-number d-flex">
+                                    <h6 class="px-3 fw-light">Phone Number: </h6>
+                                    <h6 id="phone-number" class="fw-bold"></h6>
+                                </div>
+                            </div>
+                            <div class="lele d-flex flex-column ms-auto me-5">
+                                <div class="date-booking d-flex">
+                                    <h6 class="px-3 fw-light">Date of the appointment: </h6>
+                                    <h6 id="date-booking" class="fw-bold"></h6>
+                                </div>
+                                <div class="plan-booked d-flex">
+                                    <h6 class="px-3 fw-light">Plan chosen: </h6>
+                                    <h6 id="plan-booked" class="fw-bold"></h6>
+                                </div>
+                                <div class="expert-booked d-flex">
+                                    <h6 class="px-3 fw-light">Expert chosen: </h6>
+                                    <h6 id="expert-booked" class="fw-bold"></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thank-you"></div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="arrow row pt-3">
+                <a id="btn-back" class="col-6 text-center d-none" style="cursor:pointer" onclick="show()">
+                    <img src="/images/arrow.png" alt="next"  style="height:40px; width:40px;">
+                </a>
+                <a id="btn-forward" class="col-6 text-end w-100" style="cursor:pointer" onclick="hide()">
+                    <img src="/images/right-arrow.png" alt="next"  style="height:40px; width:40px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/jquery.typeText.js"></script>
+    <script src="./scripts/experts2.js"></script>
+</body>
+</html>

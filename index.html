@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="container-fluid p-0">
         <div class="container-fluid main-background-custom position-relative" id="HOME">
-            <nav class="navbar navbar-expand-md navbar-dark">
+            <nav class="navbar nn fixed-top navbar-expand-lg navbar-dark">
                 <a href="#" class="navbar-brand">
                     <img class=" d-none d-sm-block logo-custom" src="images/logo.png" alt="logo">
-                    <img class="d-xs-block d-sm-none" style="height:30px; width:auto;" src="images/circle-outline-with-a-central-dot (1).png" alt="logo">
+                    <img class="d-xs-block d-sm-none" style="width: 20vh;" src="images/logo.png" alt="logo">
                 </a>
                 <button
                     class="navbar-toggler"
@@ -55,60 +55,405 @@
                 </div>
             </nav>
 
-            <div class="leading-page">
-                <div class="text-light text-center mb-5">
-                    <span id="target" style="font-size: 2rem;"></span>
+            <div class="leading-page m-0 d-none d-sm-block">
+                <div class="text-light text-start pb-5 typewriter">
+                    <span class="font-monospace text-break" id="target" style="font-size: 2rem;"></span>
                     <span id="cursor"></span>
                 </div>
-                <div class="text-center mt-5">
-                    <button class="btn btn-light leading-button">
+                <div class="text-center apply d-none d-sm-block pt-5 position-absolute start-50">
+                    <a href="/booking.html" class="btn btn-light leading-button font-monospace text-center">
                         APPLY
-                    </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrappp m-auto d-flex flex-column justify-content-end">
+                <div class="leading-page-small d-sm-none">
+                    <h1 class="text-light text-center">For a journey through <br/> space.</h1>
+                </div>
+                <div class="text-center pt-5 d-sm-none mt-5">
+                    <a href="/booking.html" class="apply-small btn btn-light leading-button font-monospace text-center">
+                        APPLY
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>  
+
+
+    <div id="PLANS" class="position-relative" >
+        <div class="top-part align-items-center">
+            <h1 class="text-white text-center pt-4">JOURNEY PLANS</h1>
+            <div class="paragraph-div d-flex justify-content-around mt-4">
+                <p class="text-white text-center w-100">Take a look at our plans and you're sure to find the one suited for you!</p>
+            </div>
+            <div class="row mid-part w-100 align-items-center m-0">
+                <div class="col-4 card1 m-auto">
+                    <div class="imagess d-flex">
+                        <img class="price" src="./images/twemoji_ringed-planet.png" alt="planetary">
+                        <img class="price ms-auto p-2" src="./images/price.png" alt="price">
+                    </div>
+                    <div class="plan-text d-flex flex-column">
+                        <h4 class="text-center">Planetary Travel</h4>
+                        <p>Ever wanted to take a look at Venus? Mars? or even Uranus? With the planetary plan, you can visit any of these planets in our 5-star location.</p>
+                        <button style="background-color: #40ACDA; border: #40ACDA; color:white; width: 30%;" class="px-4 py-2 ms-4 mt-3">MORE</button>
+                    </div>
+                </div>
+                <div class="col-4 card2 m-auto">
+                    <div class="imagess d-flex">
+                        <img class="price mt-3"src="./images/planets 1.png" alt="interstellar">
+                        <img class="price ms-auto p-2" src="./images/Image2.png" alt="price">
+                    </div>
+                    <div class="plan-text d-flex flex-column mt-1">
+                        <h4 class="text-center">Interstellar Travel</h4>
+                        <p>Our solar system is not the only place you can visit in this day and age, choose this plan for a tour in some of our neighbouring systems.</p>
+                        <button style="background-color: #40ACDA; border: #40ACDA; color:white; width: 30%;" class="px-4 py-2 ms-4 mt-3">MORE</button>
+                    </div>
+                </div>
+                <div class="col-4 card3 m-auto">
+                    <div class="imagess d-flex">
+                        <img class="price" src="./images/galaxy (1) 1.png" alt="Galactic">
+                        <img class="price ms-auto p-2" src="./images/Image3.png" alt="price">
+                    </div>
+                    <div class="plan-text d-flex flex-column">
+                        <h4 class="text-center">Galactic Travel</h4>
+                        <p>For the opportunity to go even further beyond, visit the galaxy of your choice, with a tour of it's planets and systems. This is the epitome of space travel.</p>
+                        <button style="background-color: #40ACDA; border: #40ACDA; color:white; width: 30%;" class="px-4 py-2 ms-4 mt-3">MORE</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>  
-    <div id="PLANS" class="position-relative" >
-        <div class="top-part align-items-center">
-            <h2 class="text-white text-center pt-4">JOURNEY PLANS</h2>
-            <div class="paragraph-div d-flex justify-content-around mt-4">
-                <p class="text-white text-center w-50">Take a look at our plans and you're sure to find the one suited for you!</p>
-
-            </div>
-        </div>
-        <div class="row mid-part w-100 align-items-center m-0">
-            <div class="col-4 card1 m-auto">Hello</div>
-            <div class="col-4 card2 m-auto">Bye</div>
-            <div class="col-4 card3 m-auto">fuck</div>
-        </div>
-        <div class="bottom-part d-md-flex justify-content-around">
-            
-        </div>
+        
+        <div class="bottom-part d-md-flex justify-content-around"> </div>
     </div>
 
-    <div id="EXPERTS" class="d-flex flex-column align-items-center">
-        <h3 class="text-black text-center pt-5">Need a bit more reassurance? Meet our experts!</h3>
+
+    <div id="EXPERTS" class="d-flex flex-column align-items-center m-0">
+        <h3 class="text-black text-center pt-5 pb-3">Need a bit more reassurance? Meet our experts!</h3>
         <div class="border">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
                 </div>
-                <div class="carousel-inner position-relative">
-                    <div class="carousel-item active">
-                        <img src="images/pexels-emmy-e-2381069.jpg" class="d-block img1" alt="image 1">
-                        <div class="text" style="background-color: black; width: 100%;"></div>
+                <div class="text-white carousel-inner position-relative">
+
+                    <!-- 1st guy -->
+                    <div id="car1" class="carousel-item active">
+                        <div class="row text-light align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/pexels-emmy-e-2381069.jpg" alt="First slide">
+                            </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert1-name"></h2>
+                                <p id="expert1-desc" class="pt-5"></p>
+                                    <div class="expertise mt-5 pt-5">
+                                        <div class="d-flex justify-content-between w-50">
+                                            <div id="expert1-planet">
+
+                                            </div>
+                                            <h6>Planetary Travel</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between w-50">
+                                            <div id="expert1-inter">
+
+                                            </div>
+                                            <h6>Interstellar Travel</h6>
+                                        </div>
+                                        <div class="d-flex justify-content-between w-50">
+                                            <div id="expert1-galaxy">
+
+                                            </div>
+                                            <h6>Galactic Travel</h6>
+                                        </div>
+                                    </div>
+                                    <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/pexels-teddy-joseph-2955375.jpg" class="d-block img2" alt="image 2">
-                        <div class="text" style="background-color: black; width: 100%;"></div>
+
+                    <!-- 2nd guy -->
+                    <div id="car2" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/pexels-teddy-joseph-2955375.jpg" alt="Second slide">
+                            </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert2-name"></h2>
+                                <p id="expert2-desc" class="pt-5"></p>
+                                <div class="expertise mt-5 pt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert2-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert2-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert2-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block img2" alt="image 3">
-                        <div class="text" style="background-color: black; width: 100%;"></div>
+
+                    <!-- 3rd guy -->
+                    <div id="car3" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/asian woman pic.jpg" alt="Third slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert3-name"></h2>
+                                <p id="expert3-desc" class="pt-5"></p>
+                                <div class="expertise mt-5 pt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert3-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert3-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert3-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 4th guy -->
+                    <div id="car4" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/old guy pic.jpg" alt="Fourth slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert4-name"></h2>
+                                <p id="expert4-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert4-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert4-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert4-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 5th guy -->
+                    <div id="car5" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/indian man pic 1.jpg" alt="Fifth slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert5-name"></h2>
+                                <p id="expert5-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert5-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert5-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert5-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 6th guy -->
+                    <div id="car6" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/black woman pic 1.jpg" alt="Sixth slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert6-name"></h2>
+                                <p id="expert6-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert6-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert6-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert6-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 7th guy -->
+                    <div id="car7" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/indian man pic 2.jpg" alt="Seventh slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert7-name"></h2>
+                                <p id="expert7-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert7-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert7-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert7-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 8th guy -->
+                    <div id="car8" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/white man pic 2.jpg" alt="Eighth slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert8-name"></h2>
+                                <p id="expert8-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert8-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert8-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert8-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- 9th guy -->
+                    <div id="car9" class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img class="d-block img-fluid img1" src="/images/white woman pic 1.jpg" alt="Ninth slide">
+                           </div>
+                            <div class="col-6 text-div position-relative">
+                                <h2 id="expert9-name"></h2>
+                                <p id="expert9-desc" class="pt-5"></p>
+                                <div class="expertise pt-5 mt-5">
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert9-planet">
+
+                                        </div>
+                                        <h6>Planetary Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert9-inter">
+
+                                        </div>
+                                        <h6>Interstellar Travel</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-50">
+                                        <div id="expert9-galaxy">
+
+                                        </div>
+                                        <h6>Galactic Travel</h6>
+                                    </div>
+                                </div>
+                                <a href="/booking.html" class="btn btn-primary position-absolute" style="left: 30%; top: 80%;">Book a meeting</a>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -122,10 +467,66 @@
     </div>
 
 
+    <div id="ABOUT">
+        <div class="about-illustratuon">
+
+        </div>
+        <div class="about-text">
+            <h1>People said it was impossible.</h1>
+            <h1>No one would have thought this exist 20 years ago</h1>
+            <h1>We are here to exceed expectations.</h1>
+        </div>
+   </div>
+
+    <footer id="CONTACT" class="foot position-relative row w-100 m-0"> 
+        <div class="col-2"></div>
+        <div class="left col-4 text-light text-start pt-5">
+            <h3>Book your visit today.</h3>
+            <div class="form-div d-flex justify-content-start">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                </form>
+                <button class="btn btn-primary">BOOK</button>
+            </div>
+            <h5 class="mt-5 pt-2">Or by phone.     </h5>
+            <div class="icon-phone d-flex justify-content-start">
+                <img class="me-3" src="/images/call.png" alt="phone" style="height:26px; width:26px;">
+                <h6>613-236-1222, extension 7300</h6>
+            </div>
+        </div>
+
+
+        <div class="right col-4">
+            <div class="icon-address text-light text-center pt-5 ">
+                <h5>ADDRRESS</h5>
+                <div class="d-flex justify-content-center">
+                    <img class="mx-4" src="/images/address.png" alt="phone" style="height:26px; width:26px;">
+                    <h6>474 Elgin St, Ottawa, ON <br/>K2P 2E6</h6>
+                </div>
+                
+            </div>
+            <div class="icon-hours text-light text-center mt-5 pt-2">
+                <h5>HOURS</h5>
+                <div class="d-flex justify-content-center">
+                    <img class="mx-4" src="/images/clock.png" alt="phone" style="height:26px; width:26px;">
+                    <h6>8AM-6PM <br/>monday - friday</h6>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute line"></div>
+        <h5 class="text-center fs-6 text-white-50 pt-5">© Copyright 2022</h5>
+
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/jquery.typeText.js"></script>
+    <script src="./scripts/expert.js"></script>
+
 
     </body>
 </html>

@@ -1,3 +1,6 @@
+/* * { border: 1px solid red !important; } */
+
+ 
 .main-background-custom {
     background-image: url(../images/main\ page\ image.jpg);
     background-size: cover;
@@ -34,19 +37,35 @@
 .leading-button {
     border-radius: 5rem;
     border-color: #E0E5EF;
-    width: 7rem;
-    height: 3rem;
+    width: 7vw;
+    height: 3.2vw;
     background-color: #E0E5EF;
-    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 7px 15px rgba(255, 255, 255, 0.7);
 }
 
 #PLANS {
     background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    margin: 0;
+    overflow: hidden;
+
 }
 
 .top-part {
     height:50vh;
     background-color: #272F32;
+}
+
+.nn {
+    height: 10vh;
+
+}
+
+#ABOUT {
+    height: 100vh;
+    background-color: red;
 }
 
 .mid-part {
@@ -60,50 +79,236 @@
 
 .scrolled {
     background-color: black;
-    animation-delay: 3s;
+}
+
+.thank-you {
+    height: 20vh;
+}
+
+.img-side {
+    position: absolute;
+    height: 14vw;
+    bottom: 0;
+    transform: translateY(13vw);
 }
 
 .card1 {
-    height: 21rem;
-    width: 21rem;
+    height: 25vw;
+    width: 25vw;
     background-color: white;
-    transform: translateY(-6rem);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
 
 }
 .card2 {
-    height: 21rem;
-    width: 21rem;
+    height: 25vw;
+    width: 25vw;
     background-color: white;
-    transform: translateY(-6rem);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
 }
 .card3 {
-    height: 21rem;
-    width: 21rem;
+    height: 25vw;
+    width: 25vw;
     background-color: white;
-    transform: translateY(-6rem);
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
 }
 
 #EXPERTS {
-    height: 150vh;
+    height: 110vh;
+    width: auto;
     background-color: white;
+}
+
+.remove {
+    background-image: url(/images/remove.png);
+    background-size: 24px;
 }
 
 .border {
     height: 76vh;
     width: 80%;
-    background-color: #806BD4;
+    background-color: #272F32;
 }
 
 .img1 {
     height: 75.6vh;
-    width: 40%;
+    width: 90%;
 }
 .img2 {
     height: 75.6vh;
 }
-.img1 {
+.img3 {
     height: 75.6vh;
+}
+
+.plan-text p {
+    width: 80%;
+    margin: auto;
+}
+
+.price {
+    height: 7vw;
+}
+
+.text-div {
+    height: 70vh;
+}
+
+.foot {
+    background-color: #18191B;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+}
+
+.line {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%;
+    border-radius: 50%;
+    bottom: 15%; 
+    border: 4px solid #1862B5;
+}
+
+.typewriter {
+    transform: translateY(-7rem);
+    padding-left: 5rem;  
+}
+
+.leading-page-small {
+    top: 30%;
+}
+
+.apply-small {
+    width: 15vw;
+    height: 8vw;
+}
+
+.apply-xsmall {
+    width: 20vw;
+    height: 10vw;
+}
+
+.wrappp {
+    height: 60vh;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 6.5vw;
+    }
+    h3 {
+        font-size: 6vw;
+    }
+    h4 {
+        font-size: 5.5vw;
+    }
+    h5 {
+        font-size: 5vw;
+    }
+    h6 {
+        font-size: 3vw;
+    }
+    .card1 {
+        height: 16rem;
+        width: 16rem;
+        background-color: white;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+    }
+    .card2 {
+        height: 16rem;
+        width: 16rem;
+        background-color: white;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+        margin: 2rem;
+    }
+    .card3 {
+        height: 16rem;
+        width: 16rem;
+        background-color: white;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.6);
+        margin: 2rem;
+    }
+
+    
+  }
+
+  .tracking-book {
+    height: 15vw;
+    width: 11vw;
+    background-color: white;
+    margin: 0 2rem;
+    border-radius: 26px;
+  }
+
+  .main-book {
+    border-radius: 26px;
+    height: 30vw;
+    width: 65vw;
+    background-color: white;
+    border-color: grey;
+    border: gray 2px;
+  }
+
+  .activated {
+      border-radius: 26px;
+      background-color: #54D489;
+      width: 80%;
+}
+
+.active {
+    display: flex; 
+}
+
+.expert {
+    height: 35vh;
+}
+
+.expertt1 {
+    flex-basis: 33.333333%;
+}
+
+.ex1 {
+    height: 6vw;
+    width: 19vw;
+    text-align: left;
+    color: black  ;
+}
+
+.nav-book {
+    height: 10vh;
+    background-image: url(../images/ultra-hd-space-facebook-cover.jpg);
+}
+
+
+.frr {
+    color: gray;
+    font-weight: 100;
+    font-size: smaller;
+
+}
+
+.scnd {
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+.frth {
+    color: #4EC180;
+    font-size: smaller;
+}
+
+.user-img {
+    height: 3vw;
+    width: 3vw;
+    
 }
