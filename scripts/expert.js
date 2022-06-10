@@ -65,12 +65,14 @@ var experts = [
 ];
 
 var imgw1 = document.createElement("img");
-imgw1.src = "../images/remove.png";
+imgw1.src = "./images/remove.png";
 imgw1.style ="height:24px; width:24px;"
+imgw1.rel ="no"
 
 var imgr1 = document.createElement("img");
-imgr1.src = "../images/correct (1).png"
+imgr1.src = "./images/correct (1).png"
 imgr1.style ="height:24px; width:24px;"
+imgr1.rel="yes"
 
 
 
